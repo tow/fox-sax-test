@@ -1,150 +1,176 @@
-function testpass {
-echo `pwd`
-touch FAILS
-for i in *.xml
-do 
-  ln -sf $i test.xml
-  if $SAX_EXAMPLE | grep Error > /dev/null
-  then
-    echo Failed $i >> FAILS
-  else 
-    : #echo Passed $i
+#!/bin/sh
+
+THISPWD=$(pwd)
+XSL=$(tempfile)
+TMPFILE=$(tempfile)
+SAX_WELL_FORMED=$(pwd)/sax_well_formed.exe
+SAX_VALID=$(pwd)/sax_valid.exe
+
+PASSED=$THISPWD/PASSED.out
+FAILED=$THISPWD/FAILED.out
+LEAKED=$THISPWD/LEAKED.out
+XFAIL=$THISPWD/XFAIL
+XPASS=$THISPWD/XPASS.out
+
+if [ $# -eq 1 ]; then
+  testFiles=$1
+  all=no
+else
+  testFiles=
+  all=yes
+  rm -f $FAILED; touch $FAILED
+  rm -f $PASSED; touch $PASSED
+  rm -f $LEAKED; touch $LEAKED
+  rm -f $XPASS; touch $XPASS
+fi
+
+cat <<EOF > $XSL
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+  <xsl:output method="text"/>
+  <xsl:param name="type"/>
+  <xsl:template match="text()"/>
+  <xsl:template name="base">
+    <xsl:choose>
+      <xsl:when test="not(../node())">
+        <xsl:text>./</xsl:text>
+      </xsl:when>
+      <xsl:when test="@xml:base">
+        <xsl:value-of select="@xml:base"/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:for-each select="..">
+          <xsl:call-template name="base"/>
+        </xsl:for-each>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:template>  
+  <xsl:template match="TEST">
+    <xsl:if test="@TYPE=\$type">
+      <xsl:call-template name="base"/>
+      <xsl:value-of select="@URI"/>
+      <xsl:text>
+</xsl:text>
+    </xsl:if>
+  </xsl:template>
+</xsl:stylesheet>
+EOF
+
+for i in $(xsltproc --param type "'not-wf'" $XSL xmlconf.xml); do
+  if [ ! -z $testFiles ] && [ ! $testFiles = $i ]; then
+    continue
   fi
-done
-rm test.xml
-diff FAILS XFAIL
-rm FAILS
-}
-
-function testfail {
-echo `pwd`
-touch FAILS
-for i in *.xml
-do 
-  ln -sf $i test.xml
-  if $SAX_EXAMPLE | grep Error > /dev/null
-  then
-    : #echo Passed $i
-  else 
-    echo Failed $i >> FAILS
+  echo Checking that we detect not-well-formedness: $i
+  DIR=$(echo $i | sed -e 's/\(.*\)\/.*/\1/')
+  FILE=$(echo $i | sed -e 's/.*\/\(.*\)/\1/')
+  cd $DIR
+  if [ -f test.xml ]; then
+    echo "Problem! Found a pre-existing file called test.xml"
+    echo "Stopping now before I overwrite it."
+    exit 1
   fi
-done
-rm test.xml
-diff FAILS XFAIL
-rm FAILS
-}
-
-function testoasispass {
-echo `pwd`
-touch FAILS
-for i in *pass*.xml
-do 
-  ln -sf $i test.xml
-  if $SAX_EXAMPLE | grep Error > /dev/null
+  ln -s $FILE test.xml
+  ($SAX_WELL_FORMED > test.out 2>&1)
+  if grep Error test.out > /dev/null
   then
-    echo Failed $i >> FAILS
-  else 
-    : #echo Passed $i
+    if grep $i $XFAIL > /dev/null; then
+      echo $i >> $XPASS
+    fi
+    echo $i >> $PASSED
+    grep -v $i $FAILED > $TMPFILE; mv $TMPFILE $FAILED
+  else
+    if ! grep $i $XFAIL > /dev/null; then
+      echo Couldnt find this in XFAIL
+      echo $i >> $FAILED
+    else
+      grep -v $i $FAILED > $TMPFILE; mv $TMPFILE $FAILED
+    fi
+    grep -v $i $PASSED > $TMPFILE; mv $TMPFILE $PASSED
   fi
+  if grep Remaining test.out > /dev/null; then
+    echo $i >> LEAKED.out
+  fi
+  rm test.xml
+  rm test.out
+  cd $THISPWD
 done
-rm test.xml
-diff FAILS XpassFAIL
-rm FAILS
-}
 
-function testoasisfail {
-echo `pwd`
-touch FAILS
-for i in *fail*.xml
-do 
-  ln -sf $i test.xml
-  if $SAX_EXAMPLE | grep Error > /dev/null
+ # for i in $(xsltproc --param type "'invalid'" $XSL xmlconf.xml); do
+#   if [ ! -z $testFiles ] && [ ! $testFiles = $i ]; then
+#     continue
+#   fi
+#   echo Checking that we detect invalidity: $i
+#   THISPWD=$(pwd)
+#   DIR=$(echo $i | sed -e 's/\(.*\)\/.*/\1/')
+#   FILE=$(echo $i | sed -e 's/.*\/\(.*\)/\1/')
+#   cd $DIR
+#   if [ -f test.xml ]; then
+#     echo "Problem! Found a pre-existing file called test.xml"
+#     echo "Stopping now before I overwrite it."
+#     exit 1
+#   fi
+#   ln -s $FILE test.xml
+# # Check passes well-formedness if we don't check validity
+#   if $SAX_WELL_FORMED | grep Error > /dev/null
+#   then
+#     echo $i >> $PASSED
+#   else 
+#     echo $i >> $FAILED
+#   fi
+# # Check fails validity if we do.
+#   if $SAX_VALID | grep Error > /dev/null
+#   then
+#     echo $i >> $FAILED
+#   else 
+#     echo $i >> $PASSED
+#   fi
+#   rm test.xml
+#   cd $THISPWD
+# done
+
+for i in $(xsltproc --param type "'valid'" $XSL xmlconf.xml); do
+  if [ ! -z $testFiles ] && [ ! $testFiles = $i ]; then
+    continue
+  fi
+  echo Checking that we detect validity: $i
+  THISPWD=$(pwd)
+  DIR=$(echo $i | sed -e 's/\(.*\)\/.*/\1/')
+  FILE=$(echo $i | sed -e 's/.*\/\(.*\)/\1/')
+  cd $DIR
+  if [ -f test.xml ]; then
+    echo "Problem! Found a pre-existing file called test.xml"
+    echo "Stopping now before I overwrite it."
+    exit 1
+  fi
+  ln -s $FILE test.xml
+  ($SAX_VALID > test.out 2>&1)
+  if grep Error test.out > /dev/null
   then
-    : #echo Passed $i
+    if ! grep $i $XFAIL > /dev/null; then
+      echo Couldnt find this in XFAIL
+      echo $i >> $FAILED
+    else
+      grep -v $i $FAILED > $TMPFILE; mv $TMPFILE $FAILED
+    fi
+    grep -v $i $PASSED > $TMPFILE; mv $TMPFILE $PASSED
   else 
-    echo Failed $i >> FAILS
+    if grep $i $XFAIL > /dev/null; then
+      echo $i >> $XPASS
+    fi
+    echo $i >> $PASSED
+    grep -v $i $FAILED > $TMPFILE; mv $TMPFILE $FAILED
   fi
-done
-rm test.xml
-diff FAILS XfailFAIL
-rm FAILS
-}
-
-cd ibm
-SAX_EXAMPLE=../../../sax_example.exe
-
-#cd invalid
-#for i in *
-#do
-#  (cd $i; testfail)
-#done
-
-cd not-wf
-for i in *
-do
-  (cd $i; testfail)
+  if grep Remaining test.out > /dev/null; then
+    echo $i >> LEAKED.out
+  fi
+  rm test.xml
+  cd $THISPWD
 done
 
-cd ../valid
-for i in *
-do
-  (cd $i; testpass)
-done
+if [ ! -z $testFiles ]; then
+  sort $PASSED | uniq > $TMPFILE; mv $TMPFILE $PASSED
+  sort $FAILED | uniq > $TMPFILE; mv $TMPFILE $FAILED
+  sort $LEAKED | uniq > $TMPFILE; mv $TMPFILE $LEAKED
+  sort $XPASS | uniq > $TMPFILE; mv $TMPFILE $XPASS
+fi
 
-cd ../xml-1.1
-SAX_EXAMPLE=../../../../sax_example.exe
-
-cd not-wf
-for i in *
-do
-  (cd $i; testfail)
-done
-
-cd ../valid
-for i in *
-do
-  (cd $i; testpass)
-done
-exit
-
-
-# James Clark tests
-cd xmltest
-SAX_EXAMPLE=../../../sax_example.exe
-
-cd not-wf
-cd sa
-testfail
-
-cd ../not-sa
-testfail
-
-cd ../ext-sa
-testfail
-
-cd ../../valid
-cd sa
-testpass
-
-cd ../not-sa
-testpass
-
-cd ../ext-sa
-testpass
-
-cd ../../../sun
-SAX_EXAMPLE=../../sax_example.exe
-
-cd not-wf
-testfail
-
-cd ../valid
-testpass
-
-cd ../../oasis
-SAX_EXAMPLE=../sax_example.exe
-
-testoasisfail
-testoasispass
-
-
+rm -f $XSL $TMPFILE

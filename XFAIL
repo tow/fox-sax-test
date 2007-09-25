@@ -1,0 +1,266 @@
+xmltest/not-wf/sa/030.xml Invalid ASCII character
+xmltest/not-wf/sa/031.xml Invalid ASCII character
+xmltest/not-wf/sa/032.xml Invalid ASCII character
+xmltest/not-wf/sa/033.xml Invalid ASCII character
+xmltest/not-wf/sa/116.xml Invalid ASCII character
+xmltest/not-wf/sa/117.xml Invalid Unicode character
+xmltest/not-wf/sa/166.xml Invalid Unicode character
+xmltest/not-wf/sa/167.xml Invalid Unicode character
+xmltest/not-wf/sa/168.xml Invalid Unicode character
+xmltest/not-wf/sa/169.xml Invalid Unicode character
+xmltest/not-wf/sa/170.xml Invalid Unicode character
+xmltest/not-wf/sa/171.xml Invalid Unicode character
+xmltest/not-wf/sa/172.xml Invalid Unicode character
+xmltest/not-wf/sa/173.xml Invalid Unicode character
+xmltest/not-wf/sa/174.xml Invalid Unicode character
+xmltest/not-wf/sa/175.xml Invalid Unicode character
+xmltest/not-wf/sa/177.xml Invalid Unicode character
+xmltest/not-wf/not-sa/001.xml External subset
+xmltest/not-wf/not-sa/003.xml External subset
+xmltest/not-wf/not-sa/004.xml External subset
+xmltest/not-wf/not-sa/006.xml External subset
+xmltest/not-wf/not-sa/007.xml External subset
+xmltest/not-wf/not-sa/008.xml External subset
+xmltest/not-wf/not-sa/009.xml External subset
+xmltest/not-wf/ext-sa/001.xml External subset
+xmltest/not-wf/ext-sa/002.xml External subset
+xmltest/not-wf/ext-sa/003.xml External subset
+sun/not-wf/cond01.xml External subset
+sun/not-wf/cond02.xml External subset
+sun/not-wf/decl01.xml External subset
+sun/not-wf/dtd07.xml External subset
+sun/not-wf/encoding07.xml External subset
+oasis/p09fail1.xml External subset
+oasis/p09fail2.xml External subset
+oasis/p30fail1.xml External subset
+oasis/p31fail1.xml External subset
+oasis/p61fail1.xml External subset
+oasis/p62fail1.xml External subset
+oasis/p62fail2.xml External subset
+oasis/p63fail1.xml External subset
+oasis/p63fail2.xml External subset
+oasis/p64fail1.xml External subset
+oasis/p64fail2.xml External subset
+ibm/not-wf/P02/ibm02n01.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n02.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n03.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n04.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n04.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n05.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n06.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n07.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n08.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n09.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n10.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n11.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n12.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n13.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n14.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n15.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n16.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n17.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n18.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n19.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n20.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n21.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n22.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n23.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n24.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n25.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n26.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n27.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n28.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n29.xml Invalid ASCII character
+ibm/not-wf/P02/ibm02n30.xml Invalid Unicode character
+ibm/not-wf/P02/ibm02n31.xml Invalid Unicode character
+ibm/not-wf/P02/ibm02n32.xml Invalid Unicode character
+ibm/not-wf/P02/ibm02n33.xml Invalid Unicode character
+ibm/not-wf/p28a/ibm28an01.xml External subset
+ibm/not-wf/P30/ibm30n01.xml External subset
+ibm/not-wf/P31/ibm31n01.xml External subset
+ibm/not-wf/P61/ibm61n01.xml External subset
+ibm/not-wf/P62/ibm62n01.xml External subset
+ibm/not-wf/P62/ibm62n02.xml External subset
+ibm/not-wf/P62/ibm62n03.xml External subset
+ibm/not-wf/P62/ibm62n04.xml External subset
+ibm/not-wf/P62/ibm62n05.xml External subset
+ibm/not-wf/P62/ibm62n06.xml External subset
+ibm/not-wf/P62/ibm62n07.xml External subset
+ibm/not-wf/P62/ibm62n08.xml External subset
+ibm/not-wf/P63/ibm63n01.xml External subset
+ibm/not-wf/P63/ibm63n02.xml External subset
+ibm/not-wf/P63/ibm63n03.xml External subset
+ibm/not-wf/P63/ibm63n04.xml External subset
+ibm/not-wf/P63/ibm63n05.xml External subset
+ibm/not-wf/P63/ibm63n06.xml External subset
+ibm/not-wf/P63/ibm63n07.xml External subset
+ibm/not-wf/P64/ibm64n01.xml External subset
+ibm/not-wf/P64/ibm64n02.xml External subset
+ibm/not-wf/P64/ibm64n03.xml External subset
+ibm/not-wf/P65/ibm65n01.xml External subset
+ibm/not-wf/P65/ibm65n02.xml External subset
+ibm/not-wf/P77/ibm77n01.xml External subset
+ibm/not-wf/P77/ibm77n02.xml External subset
+ibm/not-wf/P77/ibm77n03.xml External subset
+ibm/not-wf/P77/ibm77n04.xml External subset
+ibm/not-wf/P78/ibm78n01.xml External subset
+ibm/not-wf/P78/ibm78n02.xml External subset
+ibm/not-wf/P79/ibm79n01.xml External subset
+ibm/not-wf/P79/ibm79n02.xml External subset
+ibm/xml-1.1/not-wf/P02/ibm02n01.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n02.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n03.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n04.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n05.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n06.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n07.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n08.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n09.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n10.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n11.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n12.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n13.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n14.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n15.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n16.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n17.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n18.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n19.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n20.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n21.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n22.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n23.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n24.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n25.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n26.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n27.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n28.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n29.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n30.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n31.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n32.xml Invalid ASCII character
+ibm/xml-1.1/not-wf/P02/ibm02n33.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n34.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n35.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n36.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n37.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n38.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n39.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n40.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n41.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n42.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n43.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n44.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n45.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n46.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n47.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n48.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n49.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n50.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n51.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n52.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n53.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n54.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n55.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n56.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n57.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n58.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n59.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n60.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n61.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n62.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n63.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n64.xml External subset
+ibm/xml-1.1/not-wf/P02/ibm02n65.xml External subset
+ibm/xml-1.1/not-wf/P02/ibm02n66.xml External subset
+ibm/xml-1.1/not-wf/P02/ibm02n67.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n68.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P02/ibm02n69.xml Invalid Unicode character
+ibm/xml-1.1/not-wf/P77/ibm77n01.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n02.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n03.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n04.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n05.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n06.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n07.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n08.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n09.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n10.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n11.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n12.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n13.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n14.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n15.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n16.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n17.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n18.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n19.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n20.xml External subset
+ibm/xml-1.1/not-wf/P77/ibm77n21.xml External subset
+eduni/errata-2e/E27.xml Invalid Unicode character
+eduni/errata-2e/E38.xml Invalid Unicode character
+eduni/errata-2e/E61.xml Encoding issue
+eduni/xml-1.1/001.xml External subset
+eduni/xml-1.1/002.xml External subset
+eduni/xml-1.1/003.xml External subset
+eduni/xml-1.1/004.xml External subset
+eduni/xml-1.1/005.xml External subset
+eduni/xml-1.1/011.xml Invalid ASCII character
+eduni/xml-1.1/013.xml Invalid ASCII character
+eduni/xml-1.1/038.xml Invalid ASCII character
+eduni/xml-1.1/039.xml Invalid ASCII character
+eduni/xml-1.1/041.xml Invalid ASCII character
+eduni/errata-2e/E22.xml Unicode required
+eduni/errata-2e/E50.xml Unicode required
+eduni/xml-1.1/044.xml Non-ASCII required
+eduni/xml-1.1/045.xml Non-ASCII required
+ibm/valid/P66/ibm66v01.xml Unicode required
+ibm/valid/P85/ibm85v01.xml Unicode required
+ibm/valid/P86/ibm86v01.xml Unicode required
+ibm/valid/P87/ibm87v01.xml Unicode required
+ibm/valid/P88/ibm88v01.xml Unicode required
+ibm/valid/P89/ibm89v01.xml Unicode required
+ibm/xml-1.1/valid/P02/ibm02v02.xml Unicode required
+ibm/xml-1.1/valid/P02/ibm02v03.xml Unicode required
+ibm/xml-1.1/valid/P02/ibm02v04.xml Unicode required
+ibm/xml-1.1/valid/P02/ibm02v05.xml Unicode required
+ibm/xml-1.1/valid/P04/ibm04v01.xml Unicode required
+ibm/xml-1.1/valid/P04a/ibm04av01.xml Unicode required
+ibm/xml-1.1/valid/P05/ibm05v01.xml Unicode required
+ibm/xml-1.1/valid/P05/ibm05v02.xml Unicode required
+ibm/xml-1.1/valid/P05/ibm05v03.xml Unicode required
+ibm/xml-1.1/valid/P05/ibm05v04.xml Unicode required
+ibm/xml-1.1/valid/P05/ibm05v05.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v01.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v02.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v03.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v04.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v05.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v06.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v07.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v08.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v09.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v10.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v11.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v12.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v13.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v14.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v15.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v16.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v17.xml Unicode required
+ibm/xml-1.1/valid/P77/ibm77v18.xml Unicode required
+japanese/pr-xml-little-endian.xml Unicode required
+japanese/pr-xml-utf-16.xml Unicode required
+japanese/pr-xml-utf-8.xml Unicode required
+japanese/weekly-little-endian.xml Unicode required
+japanese/weekly-utf-16.xml Unicode required
+japanese/weekly-utf-8.xml Unicode required
+sun/valid/notation01.xml External subset
+xmltest/valid/sa/049.xml Unicode required
+xmltest/valid/sa/050.xml Unicode required
+xmltest/valid/sa/051.xml Unicode required
+xmltest/valid/sa/061.xml Unicode required
+xmltest/valid/sa/062.xml Unicode required
+xmltest/valid/sa/063.xml Unicode required
+xmltest/valid/sa/064.xml Unicode required
+xmltest/valid/sa/089.xml Unicode required
