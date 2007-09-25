@@ -1,4 +1,4 @@
-<TESTCASES PROFILE="Richard Tobin's XML 1.0 2nd edition errata test suite 21 Jul 2003">
+<TESTCASES PROFILE="Richard Tobin's XML 1.0 2nd edition errata test suite 21 Jul 2003" xml:base="eduni/errata-2e/">
 
 <!-- E1 is an editorial change that does not need a test -->
 

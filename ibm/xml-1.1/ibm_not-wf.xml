@@ -17,7 +17,7 @@
     Configuration file for not-wf XML 1.1 test cases.
 -->
 
-<TESTCASES PROFILE="IBM Not-WF Conformance Tests for XML 1.1 CR October 15, 2002">
+<TESTCASES PROFILE="IBM Not-WF Conformance Tests for XML 1.1 CR October 15, 2002" xml:base="ibm/xml-1.1/">
 
 <TESTCASES PROFILE="IBM XML Conformance Test Suite - Production 2">
     <TEST VERSION="1.1" RECOMMENDATION="XML1.1" URI="not-wf/P02/ibm02n01.xml" 

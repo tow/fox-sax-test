@@ -17,7 +17,7 @@
     Configuration file for invalid XML 1.1 test cases.
 -->
 
-<TESTCASES PROFILE="IBM Invalid Conformance Tests for XML 1.1 CR October 15, 2002">
+<TESTCASES PROFILE="IBM Invalid Conformance Tests for XML 1.1 CR October 15, 2002" xml:base="ibm/xml-1.1/">
 
 <TESTCASES PROFILE="IBM XML Conformance Test Suite">
   <TEST VERSION="1.1" RECOMMENDATION="XML1.1" URI="invalid/P46/ibm46i01.xml" 

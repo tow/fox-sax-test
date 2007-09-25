@@ -1,4 +1,4 @@
-<TESTCASES PROFILE="Richard Tobin's XML Namespaces 1.0 test suite 14 Feb 2003">
+<TESTCASES PROFILE="Richard Tobin's XML Namespaces 1.0 test suite 14 Feb 2003" xml:base="eduni/namespaces/1.0/">
 
 <TEST RECOMMENDATION="NS1.0" SECTIONS="2" URI="001.xml" ID="rmt-ns10-001" TYPE="valid">
 Namespace name test: a perfectly good http URI

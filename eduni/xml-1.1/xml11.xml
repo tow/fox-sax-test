@@ -1,4 +1,4 @@
-<TESTCASES PROFILE="Richard Tobin's XML 1.1 test suite 13 Feb 2003">
+<TESTCASES PROFILE="Richard Tobin's XML 1.1 test suite 13 Feb 2003" xml:base="eduni/xml-1.1/">
 
 <TEST VERSION="1.1" RECOMMENDATION="XML1.1" SECTIONS="2.8 4.3.4" URI="001.xml" ID="rmt-001" TYPE="not-wf" ENTITIES="parameter">
 External subset has later version number

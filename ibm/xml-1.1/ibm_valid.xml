@@ -13,7 +13,7 @@
         IBM has been advised of the possibility of their occurrence. IBM
         will not be liable for any third party claims against you.
 -->
-<TESTCASES PROFILE="IBM Valid Conformance Tests for XML 1.1 CR October 15, 2002">
+<TESTCASES PROFILE="IBM Valid Conformance Tests for XML 1.1 CR October 15, 2002" xml:base="ibm/xml-1.1/">
 
 <TESTCASES PROFILE="IBM XML Conformance Test Suite - Production 2">
     <TEST VERSION="1.1" RECOMMENDATION="XML1.1" URI="valid/P02/ibm02v01.xml" 
