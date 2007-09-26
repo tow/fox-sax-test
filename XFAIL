@@ -1,46 +1,89 @@
-xmltest/not-wf/sa/030.xml Invalid ASCII character
-xmltest/not-wf/sa/031.xml Invalid ASCII character
-xmltest/not-wf/sa/032.xml Invalid ASCII character
-xmltest/not-wf/sa/033.xml Invalid ASCII character
-xmltest/not-wf/sa/116.xml Invalid ASCII character
-xmltest/not-wf/sa/117.xml Invalid Unicode character
-xmltest/not-wf/sa/166.xml Invalid Unicode character
-xmltest/not-wf/sa/167.xml Invalid Unicode character
-xmltest/not-wf/sa/168.xml Invalid Unicode character
-xmltest/not-wf/sa/169.xml Invalid Unicode character
-xmltest/not-wf/sa/170.xml Invalid Unicode character
-xmltest/not-wf/sa/171.xml Invalid Unicode character
-xmltest/not-wf/sa/172.xml Invalid Unicode character
-xmltest/not-wf/sa/173.xml Invalid Unicode character
-xmltest/not-wf/sa/174.xml Invalid Unicode character
-xmltest/not-wf/sa/175.xml Invalid Unicode character
-xmltest/not-wf/sa/177.xml Invalid Unicode character
-xmltest/not-wf/not-sa/001.xml External subset
-xmltest/not-wf/not-sa/003.xml External subset
-xmltest/not-wf/not-sa/004.xml External subset
-xmltest/not-wf/not-sa/006.xml External subset
-xmltest/not-wf/not-sa/007.xml External subset
-xmltest/not-wf/not-sa/008.xml External subset
-xmltest/not-wf/not-sa/009.xml External subset
-xmltest/not-wf/ext-sa/001.xml External subset
-xmltest/not-wf/ext-sa/002.xml External subset
-xmltest/not-wf/ext-sa/003.xml External subset
-sun/not-wf/cond01.xml External subset
-sun/not-wf/cond02.xml External subset
-sun/not-wf/decl01.xml External subset
-sun/not-wf/dtd07.xml External subset
-sun/not-wf/encoding07.xml External subset
-oasis/p09fail1.xml External subset
-oasis/p09fail2.xml External subset
-oasis/p30fail1.xml External subset
-oasis/p31fail1.xml External subset
-oasis/p61fail1.xml External subset
-oasis/p62fail1.xml External subset
-oasis/p62fail2.xml External subset
-oasis/p63fail1.xml External subset
-oasis/p63fail2.xml External subset
-oasis/p64fail1.xml External subset
-oasis/p64fail2.xml External subset
+eduni/errata-2e/E20.xml Proper validation (can do)
+eduni/errata-2e/E22.xml Unicode required
+eduni/errata-2e/E27.xml Invalid Unicode character
+eduni/errata-2e/E2a.xml Proper validation (can do)
+eduni/errata-2e/E2b.xml Proper validation
+eduni/errata-2e/E34.xml Proper validation (only error)
+eduni/errata-2e/E38.xml Invalid Unicode character
+eduni/errata-2e/E50.xml Unicode required
+eduni/errata-2e/E55.xml Proper validation (only error)
+eduni/errata-2e/E61.xml Encoding issue
+eduni/errata-2e/E95.xml Proper validation (can do)
+eduni/errata-2e/E9b.xml Proper validation (can do)
+eduni/namespaces/1.0/004.xml Relative NSURI (only error)
+eduni/namespaces/1.0/005.xml Relative NSURI (only error)
+eduni/namespaces/1.0/006.xml Unicode required
+eduni/namespaces/1.0/045.xml Proper validation (can do)
+eduni/namespaces/1.0/046.xml Proper validation (can do)
+eduni/namespaces/1.1/001.xml ISO-8859-1 required
+eduni/namespaces/1.1/002.xml ISO-8859-1 required
+eduni/namespaces/1.1/006.xml Unicode required
+eduni/xml-1.1/001.xml External subset
+eduni/xml-1.1/002.xml External subset
+eduni/xml-1.1/003.xml External subset
+eduni/xml-1.1/004.xml External subset
+eduni/xml-1.1/005.xml External subset
+eduni/xml-1.1/010.xml ISO-8859-1 required
+eduni/xml-1.1/011.xml ISO-8859-1 required
+eduni/xml-1.1/012.xml ISO-8859-1 required
+eduni/xml-1.1/013.xml ISO-8859-1 required
+eduni/xml-1.1/014.xml ISO-8859-1 required
+eduni/xml-1.1/015.xml Unicode required
+eduni/xml-1.1/017.xml Unicode required
+eduni/xml-1.1/018.xml Unicode required
+eduni/xml-1.1/022.xml ISO-8859-1 required
+eduni/xml-1.1/023.xml ISO-8859-1 required
+eduni/xml-1.1/026.xml ISO-8859-1 required
+eduni/xml-1.1/027.xml ISO-8859-1 required
+eduni/xml-1.1/030.xml ISO-8859-1 required
+eduni/xml-1.1/031.xml ISO-8859-1 required
+eduni/xml-1.1/032.xml Unicode required
+eduni/xml-1.1/034.xml ISO-8859-1 required
+eduni/xml-1.1/035.xml ISO-8859-1 required
+eduni/xml-1.1/036.xml ISO-8859-1 required
+eduni/xml-1.1/037.xml ISO-8859-1 required
+eduni/xml-1.1/038.xml ISO-8859-1 required
+eduni/xml-1.1/039.xml ISO-8859-1 required
+eduni/xml-1.1/040.xml ISO-8859-1 required
+eduni/xml-1.1/041.xml ISO-8859-1 required
+eduni/xml-1.1/042.xml ISO-8859-1 required
+eduni/xml-1.1/043.xml ISO-8859-1 required
+eduni/xml-1.1/044.xml Non-ASCII required
+eduni/xml-1.1/045.xml Non-ASCII required
+eduni/xml-1.1/046.xml Unicode required
+eduni/xml-1.1/047.xml Unicode required
+eduni/xml-1.1/048.xml Unicode required
+eduni/xml-1.1/049.xml Unicode required
+eduni/xml-1.1/050.xml ISO-8859-1 required
+eduni/xml-1.1/051.xml ISO-8859-1 required
+eduni/xml-1.1/052.xml ISO-8859-1 required
+eduni/xml-1.1/053.xml ISO-8859-1 required
+eduni/xml-1.1/054.xml ISO-8859-1 required
+ibm/invalid/P39/ibm39i03.xml Proper validation
+ibm/invalid/P39/ibm39i04.xml Proper validation
+ibm/invalid/P41/ibm41i01.xml Proper validation
+ibm/invalid/P41/ibm41i02.xml Proper validation (can do)
+ibm/invalid/P51/ibm51i03.xml Proper validation
+ibm/invalid/P56/ibm56i01.xml ID handling
+ibm/invalid/P56/ibm56i02.xml ID handling
+ibm/invalid/P56/ibm56i03.xml Proper validation (can do)
+ibm/invalid/P56/ibm56i05.xml Proper validation
+ibm/invalid/P56/ibm56i06.xml ID handling
+ibm/invalid/P56/ibm56i07.xml ID handling
+ibm/invalid/P56/ibm56i08.xml ID handling
+ibm/invalid/P56/ibm56i09.xml ID handling
+ibm/invalid/P56/ibm56i10.xml ID handling
+ibm/invalid/P56/ibm56i13.xml Proper validation (can do)
+ibm/invalid/P56/ibm56i16.xml Proper validation (can do)
+ibm/invalid/P56/ibm56i17.xml Proper validation (can do)
+ibm/invalid/P56/ibm56i18.xml Proper validation (can do)
+ibm/invalid/P58/ibm58i01.xml Proper validation (can do)
+ibm/invalid/P58/ibm58i02.xml Proper validation (can do)
+ibm/invalid/P59/ibm59i01.xml Proper validation (can do)
+ibm/invalid/P60/ibm60i01.xml Proper validation (can do)
+ibm/invalid/P60/ibm60i02.xml Proper validation (can do)
+ibm/invalid/P60/ibm60i03.xml Proper validation (can do)
+ibm/invalid/P60/ibm60i04.xml Proper validation (can do)
 ibm/not-wf/P02/ibm02n01.xml Invalid ASCII character
 ibm/not-wf/P02/ibm02n02.xml Invalid ASCII character
 ibm/not-wf/P02/ibm02n03.xml Invalid ASCII character
@@ -75,7 +118,6 @@ ibm/not-wf/P02/ibm02n30.xml Invalid Unicode character
 ibm/not-wf/P02/ibm02n31.xml Invalid Unicode character
 ibm/not-wf/P02/ibm02n32.xml Invalid Unicode character
 ibm/not-wf/P02/ibm02n33.xml Invalid Unicode character
-ibm/not-wf/p28a/ibm28an01.xml External subset
 ibm/not-wf/P30/ibm30n01.xml External subset
 ibm/not-wf/P31/ibm31n01.xml External subset
 ibm/not-wf/P61/ibm61n01.xml External subset
@@ -107,6 +149,15 @@ ibm/not-wf/P78/ibm78n01.xml External subset
 ibm/not-wf/P78/ibm78n02.xml External subset
 ibm/not-wf/P79/ibm79n01.xml External subset
 ibm/not-wf/P79/ibm79n02.xml External subset
+ibm/not-wf/p28a/ibm28an01.xml External subset
+ibm/valid/P66/ibm66v01.xml Unicode required
+ibm/valid/P85/ibm85v01.xml Unicode required
+ibm/valid/P86/ibm86v01.xml Unicode required
+ibm/valid/P87/ibm87v01.xml Unicode required
+ibm/valid/P88/ibm88v01.xml Unicode required
+ibm/valid/P89/ibm89v01.xml Unicode required
+ibm/xml-1.1/invalid/P46/ibm46i01.xml Unicode required
+ibm/xml-1.1/invalid/P46/ibm46i02.xml Unicode required
 ibm/xml-1.1/not-wf/P02/ibm02n01.xml Invalid ASCII character
 ibm/xml-1.1/not-wf/P02/ibm02n02.xml Invalid ASCII character
 ibm/xml-1.1/not-wf/P02/ibm02n03.xml Invalid ASCII character
@@ -197,29 +248,6 @@ ibm/xml-1.1/not-wf/P77/ibm77n18.xml External subset
 ibm/xml-1.1/not-wf/P77/ibm77n19.xml External subset
 ibm/xml-1.1/not-wf/P77/ibm77n20.xml External subset
 ibm/xml-1.1/not-wf/P77/ibm77n21.xml External subset
-eduni/errata-2e/E27.xml Invalid Unicode character
-eduni/errata-2e/E38.xml Invalid Unicode character
-eduni/errata-2e/E61.xml Encoding issue
-eduni/xml-1.1/001.xml External subset
-eduni/xml-1.1/002.xml External subset
-eduni/xml-1.1/003.xml External subset
-eduni/xml-1.1/004.xml External subset
-eduni/xml-1.1/005.xml External subset
-eduni/xml-1.1/011.xml Invalid ASCII character
-eduni/xml-1.1/013.xml Invalid ASCII character
-eduni/xml-1.1/038.xml Invalid ASCII character
-eduni/xml-1.1/039.xml Invalid ASCII character
-eduni/xml-1.1/041.xml Invalid ASCII character
-eduni/errata-2e/E22.xml Unicode required
-eduni/errata-2e/E50.xml Unicode required
-eduni/xml-1.1/044.xml Non-ASCII required
-eduni/xml-1.1/045.xml Non-ASCII required
-ibm/valid/P66/ibm66v01.xml Unicode required
-ibm/valid/P85/ibm85v01.xml Unicode required
-ibm/valid/P86/ibm86v01.xml Unicode required
-ibm/valid/P87/ibm87v01.xml Unicode required
-ibm/valid/P88/ibm88v01.xml Unicode required
-ibm/valid/P89/ibm89v01.xml Unicode required
 ibm/xml-1.1/valid/P02/ibm02v02.xml Unicode required
 ibm/xml-1.1/valid/P02/ibm02v03.xml Unicode required
 ibm/xml-1.1/valid/P02/ibm02v04.xml Unicode required
@@ -255,7 +283,92 @@ japanese/pr-xml-utf-8.xml Unicode required
 japanese/weekly-little-endian.xml Unicode required
 japanese/weekly-utf-16.xml Unicode required
 japanese/weekly-utf-8.xml Unicode required
+oasis/p04pass1.xml Unicode required
+oasis/p06fail1.xml Proper validation (can do)
+oasis/p08fail1.xml Proper validation (can do)
+oasis/p08fail2.xml Proper validation (can do)
+oasis/p09fail1.xml External subset
+oasis/p09fail2.xml External subset
+oasis/p11pass1.xml URI parsing
+oasis/p16pass1.xml Detect warnings
+oasis/p30fail1.xml External subset
+oasis/p31fail1.xml External subset
+oasis/p61fail1.xml External subset
+oasis/p62fail1.xml External subset
+oasis/p62fail2.xml External subset
+oasis/p63fail1.xml External subset
+oasis/p63fail2.xml External subset
+oasis/p64fail1.xml External subset
+oasis/p64fail2.xml External subset
+oasis/p66pass1.xml Unicode required
+oasis/p74pass1.xml External subset
+oasis/p75pass1.xml External subset
+sun/invalid/attr01.xml Proper validation
+sun/invalid/attr02.xml Proper validation
+sun/invalid/attr03.xml Proper validation
+sun/invalid/attr04.xml Proper validation
+sun/invalid/attr05.xml Proper validation
+sun/invalid/attr06.xml Proper validation
+sun/invalid/attr07.xml Proper validation
+sun/invalid/attr08.xml Proper validation
+sun/invalid/attr09.xml Proper validation
+sun/invalid/attr10.xml Proper validation
+sun/invalid/attr11.xml Proper validation
+sun/invalid/attr12.xml Proper validation
+sun/invalid/attr13.xml Proper validation
+sun/invalid/attr14.xml Proper validation
+sun/invalid/attr15.xml Proper validation
+sun/invalid/attr16.xml Proper validation
+sun/invalid/dtd01.xml Proper validation
+sun/invalid/dtd03.xml Proper validation
+sun/invalid/el01.xml Proper validation
+sun/invalid/el03.xml Proper validation
+sun/invalid/el05.xml Proper validation
+sun/invalid/id04.xml Proper validation (can do)
+sun/invalid/id05.xml Proper validation (can do)
+sun/invalid/id06.xml Proper validation (can do)
+sun/invalid/id07.xml Proper validation (can do)
+sun/invalid/id08.xml Proper validation (can do)
+sun/invalid/id09.xml Proper validation (can do)
+sun/invalid/required00.xml Proper validation
+sun/invalid/required01.xml Proper validation
+sun/invalid/required02.xml Proper validation
+sun/invalid/utf16b.xml Unicode required
+sun/invalid/utf16l.xml Unicode required
+sun/not-wf/cond01.xml External subset
+sun/not-wf/cond02.xml External subset
+sun/not-wf/decl01.xml External subset
+sun/not-wf/dtd07.xml External subset
+sun/not-wf/encoding07.xml External subset
+sun/not-wf/uri01.xml  URI parsing
 sun/valid/notation01.xml External subset
+xmltest/not-wf/ext-sa/001.xml External subset
+xmltest/not-wf/ext-sa/002.xml External subset
+xmltest/not-wf/ext-sa/003.xml External subset
+xmltest/not-wf/not-sa/001.xml External subset
+xmltest/not-wf/not-sa/003.xml External subset
+xmltest/not-wf/not-sa/004.xml External subset
+xmltest/not-wf/not-sa/006.xml External subset
+xmltest/not-wf/not-sa/007.xml External subset
+xmltest/not-wf/not-sa/008.xml External subset
+xmltest/not-wf/not-sa/009.xml External subset
+xmltest/not-wf/sa/030.xml Invalid ASCII character
+xmltest/not-wf/sa/031.xml Invalid ASCII character
+xmltest/not-wf/sa/032.xml Invalid ASCII character
+xmltest/not-wf/sa/033.xml Invalid ASCII character
+xmltest/not-wf/sa/116.xml Invalid ASCII character
+xmltest/not-wf/sa/117.xml Invalid Unicode character
+xmltest/not-wf/sa/166.xml Invalid Unicode character
+xmltest/not-wf/sa/167.xml Invalid Unicode character
+xmltest/not-wf/sa/168.xml Invalid Unicode character
+xmltest/not-wf/sa/169.xml Invalid Unicode character
+xmltest/not-wf/sa/170.xml Invalid Unicode character
+xmltest/not-wf/sa/171.xml Invalid Unicode character
+xmltest/not-wf/sa/172.xml Invalid Unicode character
+xmltest/not-wf/sa/173.xml Invalid Unicode character
+xmltest/not-wf/sa/174.xml Invalid Unicode character
+xmltest/not-wf/sa/175.xml Invalid Unicode character
+xmltest/not-wf/sa/177.xml Invalid Unicode character
 xmltest/valid/sa/049.xml Unicode required
 xmltest/valid/sa/050.xml Unicode required
 xmltest/valid/sa/051.xml Unicode required
