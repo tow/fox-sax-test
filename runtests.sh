@@ -2,11 +2,15 @@
 
 FOXHOME=/Users/tow/devel/FoX
 
+ulimit -c 0
+
 rm *.exe
 (cd $FOXHOME/sax/test;
 make clean sax_well_formed.ns.no.exe sax_well_formed.ns.yes.exe sax_valid.ns.no.exe sax_valid.ns.yes.exe)
 cp $FOXHOME/sax/test/sax_well_formed.*.exe .
 cp $FOXHOME/sax/test/sax_valid.*.exe .
+
+if test ! -f sax_well_formed.ns.no.exe; then exit 1; fi
 
 THISPWD=$(pwd)
 XSL=$(tempfile)
@@ -35,8 +39,9 @@ else
   testFiles=
   all=yes
   rm -f $FAILED; touch $FAILED
-  rm -f $PASSED; touch $PASSED
   rm -f $LEAKED; touch $LEAKED
+  rm -f $CRASHED; touch $CRASHED
+  rm -f $PASSED; touch $PASSED
   rm -f $XPASS; touch $XPASS
 fi
 
