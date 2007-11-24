@@ -10,7 +10,7 @@ NAMESPACE=$2
 BASE=$3
 URI=$4
 
-ln -s $URI test.xml
+ln -sf $URI test.xml
 fail=no
 leaked=noo
 echo -n "Checking $BASE$URI for $TYPE "
