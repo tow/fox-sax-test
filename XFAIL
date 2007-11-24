@@ -13,6 +13,7 @@ eduni/errata-2e/E9b.xml Proper validation (can do)
 eduni/namespaces/1.0/004.xml Relative NSURI (only error)
 eduni/namespaces/1.0/005.xml Relative NSURI (only error)
 eduni/namespaces/1.0/006.xml Unicode required
+eduni/namespaces/1.0/021.xml Namespace unbinding in 1.0
 eduni/namespaces/1.0/045.xml Proper validation (can do)
 eduni/namespaces/1.0/046.xml Proper validation (can do)
 eduni/namespaces/1.1/001.xml ISO-8859-1 required
