@@ -5,19 +5,25 @@ if [ $# -ne 4 ]; then
   exit 1
 fi
 
+. filenames.sh
+
 TYPE=$1
 NAMESPACE=$2
 BASE=$3
 URI=$4
 
-ln -sf $URI test.xml
+XMLFILE=$(basename $BASE$URI)
+XMLDIR=$(dirname $BASE$URI)
+
+cd $XMLDIR
+ln -sf $XMLFILE test.xml
 fail=no
-leaked=noo
+leaked=no
 echo -n "Checking $BASE$URI for $TYPE "
 
 case $TYPE in
   not-wf)
-    ($SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1)
+    $SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1
     if ! grep Error test.out > /dev/null; then
       fail=yes
     fi
@@ -25,7 +31,7 @@ case $TYPE in
     ;;
 
   valid)
-    ($SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1)
+    $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
     if grep Error test.out > /dev/null; then
       fail=yes
     fi
@@ -33,11 +39,11 @@ case $TYPE in
     ;;
 
   invalid)
-    ($SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1)
+    $SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1
     if grep Error test.out > /dev/null; then
       fail=yes
     fi
-    ($SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1)
+    $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
     if ! grep Error test.out > /dev/null; then
       fail=yes
     fi
@@ -45,7 +51,7 @@ case $TYPE in
     ;;
 
   error)
-    ($SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1)
+    $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
     if ! grep Error test.out > /dev/null; then
       fail=yes
     fi
@@ -83,3 +89,5 @@ else
   echo $BASE $URI $TYPE >> $PASSED
   fi
 fi
+
+cd $THISPWD
