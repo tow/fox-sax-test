@@ -13,9 +13,9 @@ cp $FOXHOME/sax/test/sax_valid.*.exe .
 if test ! -f sax_well_formed.ns.no.exe; then exit 1; fi
 
 THISPWD=$(pwd)
-XSL=$(tempfile)
-TESTS=$(tempfile)
-TMPFILE=$(tempfile)
+XSL=$(mktemp -t FoX)
+TESTS=$(mktemp -t FoX)
+TMPFILE=$(mktemp -t FoX)
 TEST=$THISPWD/test.sh
 XMLCONF=$THISPWD/xmlconf.xml
 SAX_WELL_FORMED=$THISPWD/sax_well_formed
@@ -69,7 +69,7 @@ cat <<EOF > $XSL
       <xsl:call-template name="base"/>
     </xsl:variable>
     <xsl:variable name="ns" select="substring('yesno', 3*number(@NAMESPACE='no')+1, 3)"/>
-    <xsl:if test="@ENTITIES='none'">
+    <xsl:if test="@ENTITIES='none' or @ENTITIES='general'">
       <xsl:value-of select="concat('(cd ', \$base,';')"/>
       <xsl:value-of select="concat('\$TEST ', @TYPE,' ', \$ns)"/>
       <xsl:value-of select="concat(' ',\$base,' ',@URI,')&#10;')"/>
