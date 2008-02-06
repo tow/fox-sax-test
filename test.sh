@@ -1,7 +1,7 @@
 #!/bin/sh
 
-if [ $# -ne 4 ]; then
-  echo Usage: test.sh \$TYPE \$NAMESPACE \$BASE \$URI
+if [ $# -lt 4 ]; then
+  echo Usage: test.sh \$TYPE \$NAMESPACE \$BASE \$URI \$OUTPUT
   exit 1
 fi
 
@@ -11,6 +11,7 @@ TYPE=$1
 NAMESPACE=$2
 BASE=$3
 URI=$4
+OUTPUT=$5
 
 XMLFILE=$(basename $BASE$URI)
 XMLDIR=$(dirname $BASE$URI)
@@ -24,7 +25,7 @@ echo -n "Checking $BASE$URI for $TYPE "
 case $TYPE in
   not-wf)
     $SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1
-    if ! grep Error test.out > /dev/null; then
+    if ! grep "Fatal error" test.out > /dev/null; then
       fail=yes
     fi
     break
@@ -32,7 +33,7 @@ case $TYPE in
 
   valid)
     $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
-    if grep Error test.out > /dev/null; then
+    if grep "Fatal error" test.out > /dev/null; then
       fail=yes
     fi
     break
@@ -40,11 +41,11 @@ case $TYPE in
 
   invalid)
     $SAX_WELL_FORMED.ns.$NAMESPACE.exe > test.out 2>&1
-    if grep Error test.out > /dev/null; then
+    if grep "Fatal error" test.out > /dev/null; then
       fail=yes
     fi
     $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
-    if ! grep Error test.out > /dev/null; then
+    if ! grep "Fatal error" test.out > /dev/null; then
       fail=yes
     fi
     break
@@ -52,7 +53,8 @@ case $TYPE in
 
   error)
     $SAX_VALID.ns.$NAMESPACE.exe > test.out 2>&1
-    if ! grep Error test.out > /dev/null; then
+# FIXME should test only for error here
+    if ! grep "Fatal error" test.out > /dev/null; then
       fail=yes
     fi
     break
@@ -88,6 +90,10 @@ else
   grep -v "$BASE $URI" $FAILED > $TMPFILE; mv $TMPFILE $FAILED
   echo $BASE $URI $TYPE >> $PASSED
   fi
+fi
+
+if [ $leaked = yes ]; then
+  echo $BASE$URI $TYPE >> $LEAKED
 fi
 
 cd $THISPWD
