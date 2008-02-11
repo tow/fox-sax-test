@@ -7,6 +7,7 @@ ACTUALTEST=$THISPWD/actualtest.sh
 XMLCONF=$THISPWD/xmlconf.xml
 SAX_WELL_FORMED=$THISPWD/sax_well_formed
 SAX_VALID=$THISPWD/sax_valid
+DOM=$THISPWD/dom_canonicalize
 
 PASSED=$THISPWD/PASSED.out
 FAILED=$THISPWD/FAILED.out

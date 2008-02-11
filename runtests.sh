@@ -11,8 +11,8 @@ cp $FOXHOME/sax/test/sax_well_formed.*.exe .
 cp $FOXHOME/sax/test/sax_valid.*.exe .
 
 (cd $FOXHOME/examples;
-make clean dom_canonicalize)
-cp $FOXHOME/examples/dom_canonicalize .
+make clean dom_canonicalize.ns.no.exe dom_canonicalize.ns.yes.exe)
+cp $FOXHOME/examples/dom_canonicalize.ns.no.exe $FOXHOME/examples/dom_canonicalize.ns.yes.exe .
 
 if test ! -f sax_well_formed.ns.no.exe; then exit 1; fi
 

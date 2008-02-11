@@ -35,7 +35,12 @@ case $TYPE in
     TESTEXEC=$SAX_VALID.ns.$NAMESPACE.exe
     export POSITIVE TESTEXEC
     $ACTUALTEST
-    break
+    if test $NAMESPACE = yes; then
+      TYPE=dom
+      TESTEXEC=$DOM.ns.$NAMESPACE.exe
+      export TESTEXEC
+      $ACTUALTEST
+    fi
     ;;
 
   invalid)
@@ -47,6 +52,12 @@ case $TYPE in
     TESTEXEC=$SAX_VALID.ns.$NAMESPACE.exe
     export POSITIVE TESTEXEC
     $ACTUALTEST
+    if test $NAMESPACE = yes; then
+      TYPE=dom
+      TESTEXEC=$DOM.ns.$NAMESPACE.exe
+      export TESTEXEC
+      $ACTUALTEST
+    fi
     ;;
 
   error)
@@ -58,4 +69,4 @@ case $TYPE in
     break
     ;;
 esac
-rm test.xml
+rm -f test.out out.xml test.xml
