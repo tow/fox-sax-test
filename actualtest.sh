@@ -39,7 +39,7 @@ if test $TYPE = dom; then
 else
   if test $fail = yes; then
     echo failed
-    if grep "$BASE$URI" $XFAIL > /dev/null; then
+    if grep "$BASE$URI" $XFAIL > /dev/null || grep "$BASE$URI" $NONASCII > /dev/null; then
       grep -v "$BASE $URI" $FAILED > $TMPFILE; mv $TMPFILE $FAILED
       echo $BASE$URI $TYPE >> $XFAIL.out
     else
@@ -48,7 +48,7 @@ else
     grep -v "$BASE $URI $TYPE" $PASSED > $TMPFILE; mv $TMPFILE $PASSED
   else
     echo passed
-    if grep "$BASE$URI" $XFAIL > /dev/null; then
+    if grep "$BASE$URI" $XFAIL > /dev/null || grep "$BASE$URI" $NONASCII; then
       echo XPASS
       echo $BASE $URI $TYPE >> $XPASS
     else

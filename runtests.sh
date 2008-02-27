@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# The following command finds files with non-ASCII chars in:
+# hexdump -e '8/1 " %02x "' E50.xml | grep " [89abcdef]"
+
 FOXHOME=/Users/tow/devel/FoX
 
 ulimit -c 0
