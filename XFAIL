@@ -1,16 +1,6 @@
-eduni/errata-2e/E34.xml Proper validation (only error)
-eduni/errata-2e/E55.xml Proper validation (only error)
 ibm/invalid/P32/ibm32i01.xml Standaloneness
 ibm/invalid/P32/ibm32i03.xml Standaloneness
 ibm/invalid/P32/ibm32i04.xml Standaloneness
-ibm/invalid/P39/ibm39i03.xml Content model
-ibm/invalid/P51/ibm51i03.xml Proper validation
-oasis/p74pass1.xml Content model
-oasis/p75pass1.xml Content model
-sun/invalid/dtd01.xml Proper validation
-sun/invalid/dtd03.xml Proper validation
-sun/invalid/el03.xml Proper validation
-sun/invalid/el05.xml Proper validation
 sun/invalid/not-sa01.xml Standaloneness
 sun/invalid/not-sa02.xml Standaloneness
 sun/invalid/not-sa03.xml Standaloneness
@@ -25,49 +15,3 @@ sun/invalid/not-sa11.xml Standaloneness
 sun/invalid/not-sa12.xml Standaloneness
 sun/invalid/not-sa13.xml Standaloneness
 sun/invalid/not-sa14.xml Standaloneness
-sun/invalid/optional01.xml Content model
-sun/invalid/optional02.xml Content model
-sun/invalid/optional03.xml Content model
-sun/invalid/optional04.xml Content model
-sun/invalid/optional05.xml Content model
-sun/invalid/optional06.xml Content model
-sun/invalid/optional07.xml Content model
-sun/invalid/optional08.xml Content model
-sun/invalid/optional09.xml Content model
-sun/invalid/optional10.xml Content model
-sun/invalid/optional11.xml Content model
-sun/invalid/optional12.xml Content model
-sun/invalid/optional13.xml Content model
-sun/invalid/optional14.xml Content model
-sun/invalid/optional15.xml Content model
-sun/invalid/optional16.xml Content model
-sun/invalid/optional17.xml Content model
-sun/invalid/optional18.xml Content model
-sun/invalid/optional19.xml Content model
-sun/invalid/optional20.xml Content model
-sun/invalid/optional21.xml Content model
-sun/invalid/optional22.xml Content model
-sun/invalid/optional23.xml Content model
-sun/invalid/optional24.xml Content model
-sun/valid/optional.xml Content model
-eduni/namespaces/1.1/006.xml Non-ASCII by reference 
-eduni/xml-1.1/044.xml Non-ASCII by reference
-eduni/xml-1.1/045.xml Non-ASCII by reference
-xmltest/valid/sa/061.xml Non-ASCII by reference
-xmltest/valid/sa/064.xml Non-ASCII by reference
-xmltest/valid/sa/089.xml Non-ASCII by reference
-sun/valid/pe00.xml Non-ASCII by reference
-ibm/valid/P66/ibm66v01.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P02/ibm02v02.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P02/ibm02v03.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P02/ibm02v04.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P02/ibm02v05.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v20.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v21.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v23.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v24.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v25.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v26.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v27.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v28.xml Non-ASCII by reference
-ibm/xml-1.1/valid/P77/ibm77v29.xml Non-ASCII by reference

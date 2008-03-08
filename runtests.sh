@@ -3,21 +3,11 @@
 # The following command finds files with non-ASCII chars in:
 # hexdump -e '8/1 " %02x "' E50.xml | grep " [89abcdef]"
 
-FOXHOME=/Users/tow/devel/FoX
-
-ulimit -c 0
-
-rm *.exe
-(cd $FOXHOME/sax/test;
-make clean sax_well_formed.ns.no.exe sax_well_formed.ns.yes.exe sax_valid.ns.no.exe sax_valid.ns.yes.exe)
-cp $FOXHOME/sax/test/sax_well_formed.*.exe .
-cp $FOXHOME/sax/test/sax_valid.*.exe .
-
-(cd $FOXHOME/examples;
-make clean dom_canonicalize.ns.no.exe dom_canonicalize.ns.yes.exe)
-cp $FOXHOME/examples/dom_canonicalize.ns.no.exe $FOXHOME/examples/dom_canonicalize.ns.yes.exe .
+./maketests.sh 
 
 if test ! -f sax_well_formed.ns.no.exe; then exit 1; fi
+
+ulimit -c 0
 
 . filenames.sh
 
@@ -33,6 +23,7 @@ else
   rm -f $CRASHED; touch $CRASHED
   rm -f $PASSED; touch $PASSED
   rm -f $XPASS; touch $XPASS
+  rm -f $DIFF; touch $DIFF
   rm -f XFAIL.out; touch XFAIL.out
 fi
 

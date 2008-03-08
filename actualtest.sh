@@ -30,8 +30,21 @@ fi
 rm -f test.out
 
 if test x$OUTPUT != x && test $TYPE = dom; then
-  echo DO COMPARISON HERE
-  # crlfdiff $OUTPUT out.xml
+  if ! grep "$BASE$URI" $XFAIL > /dev/null  && ! grep "$BASE$URI" $NONASCII > /dev/null; then
+    cat $OUTPUT > out.xml.orig
+    echo >> out.xml.orig
+    echo diff
+    if diff out.xml.orig out.xml > test.out; then
+      echo $BASE $URI diff >> $PASSED
+    else
+      echo $BASE $URI diff >> $FAILED
+      echo $BASE $URI diff >> $DIFF
+      cat test.out >> $DIFF
+      echo >> $DIFF
+      echo diffdone >> $DIFF
+    fi
+    rm -f out.xml out.xml.orig test.out
+  fi
 fi
 
 if test $TYPE = dom; then

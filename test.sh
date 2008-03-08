@@ -11,8 +11,11 @@ TYPE=$1
 NAMESPACE=$2
 BASE=$3
 URI=$4
-OUTPUT=$5
-
+if ! test -z $5; then
+  OUTPUT=$THISPWD/$BASE/$5
+else
+  OUTPUT=
+fi
 export TYPE NAMESPACE BASE URI OUTPUT
 
 XMLFILE=$(basename $BASE$URI)
@@ -20,7 +23,7 @@ XMLDIR=$(dirname $BASE$URI)
 
 cd $XMLDIR
 ln -sf $XMLFILE test.xml
-echo -n "Checking $BASE$URI for $TYPE "
+echo "Checking $BASE$URI for $TYPE "
 
 case $TYPE in
   not-wf)
