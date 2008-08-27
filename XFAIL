@@ -1,17 +1,2 @@
-ibm/invalid/P32/ibm32i01.xml Standaloneness
-ibm/invalid/P32/ibm32i03.xml Standaloneness
-ibm/invalid/P32/ibm32i04.xml Standaloneness
-sun/invalid/not-sa01.xml Standaloneness
-sun/invalid/not-sa02.xml Standaloneness
-sun/invalid/not-sa03.xml Standaloneness
-sun/invalid/not-sa04.xml Standaloneness
-sun/invalid/not-sa05.xml Standaloneness
-sun/invalid/not-sa06.xml Standaloneness
-sun/invalid/not-sa07.xml Standaloneness
-sun/invalid/not-sa08.xml Standaloneness
-sun/invalid/not-sa09.xml Standaloneness
-sun/invalid/not-sa10.xml Standaloneness
-sun/invalid/not-sa11.xml Standaloneness
-sun/invalid/not-sa12.xml Standaloneness
-sun/invalid/not-sa13.xml Standaloneness
-sun/invalid/not-sa14.xml Standaloneness
+eduni/errata-2e/E55.xml We need a non-fatal error reporter
+eduni/xml-1.1/054.xml Unclear validity
